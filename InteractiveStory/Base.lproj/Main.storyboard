@@ -24,9 +24,14 @@
                                 <rect key="frame" x="246" y="522" width="108" height="30"/>
                                 <state key="normal" title="Start Adventure"/>
                                 <connections>
-                                    <segue destination="huh-kq-icG" kind="show" id="XSp-hu-KR8"/>
+                                    <segue destination="huh-kq-icG" kind="show" identifier="startAdventure" id="XSp-hu-KR8"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hI8-YJ-ZwQ">
+                                <rect key="frame" x="24" y="452" width="552" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -35,19 +40,27 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2xY-MW-6ie" secondAttribute="bottom" id="EPb-mb-jHt"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9w4-XP-2c6" secondAttribute="bottom" constant="48" id="Fcf-nG-Hzp"/>
                             <constraint firstAttribute="trailing" secondItem="2xY-MW-6ie" secondAttribute="trailing" id="N7k-fj-l6a"/>
+                            <constraint firstItem="9w4-XP-2c6" firstAttribute="top" secondItem="hI8-YJ-ZwQ" secondAttribute="bottom" constant="40" id="alk-kM-gyd"/>
+                            <constraint firstItem="hI8-YJ-ZwQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="24" id="g7P-PZ-Fn7"/>
                             <constraint firstItem="2xY-MW-6ie" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="h07-NJ-WFg"/>
+                            <constraint firstItem="hI8-YJ-ZwQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iIx-j3-VGd"/>
+                            <constraint firstAttribute="trailing" secondItem="hI8-YJ-ZwQ" secondAttribute="trailing" constant="24" id="yiE-WI-NCG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CUf-rV-tqu"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="hI8-YJ-ZwQ" id="q2E-mi-fbM"/>
+                        <outlet property="textFieldBottomConstraint" destination="alk-kM-gyd" id="uaL-Ha-e8N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="841" y="-191"/>
         </scene>
-        <!--View Controller-->
+        <!--Page Controller-->
         <scene sceneID="vSk-X2-nNP">
             <objects>
-                <viewController id="huh-kq-icG" sceneMemberID="viewController">
+                <viewController id="huh-kq-icG" customClass="PageController" customModule="InteractiveStory" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="59M-kH-Uhg"/>
                         <viewControllerLayoutGuide type="bottom" id="3jq-et-o9N"/>
