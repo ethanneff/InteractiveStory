@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		67EE5C481CCA8C0F00BEE511 /* InteractiveStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteractiveStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67EE5C481CCA8C0F00BEE511 /* Interactive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Interactive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67EE5C4B1CCA8C0F00BEE511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67EE5C4D1CCA8C0F00BEE511 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		67EE5C501CCA8C0F00BEE511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		67EE5C491CCA8C0F00BEE511 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				67EE5C481CCA8C0F00BEE511 /* InteractiveStory.app */,
+				67EE5C481CCA8C0F00BEE511 /* Interactive.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,9 +98,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		67EE5C471CCA8C0F00BEE511 /* InteractiveStory */ = {
+		67EE5C471CCA8C0F00BEE511 /* Interactive */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 67EE5C5A1CCA8C0F00BEE511 /* Build configuration list for PBXNativeTarget "InteractiveStory" */;
+			buildConfigurationList = 67EE5C5A1CCA8C0F00BEE511 /* Build configuration list for PBXNativeTarget "Interactive" */;
 			buildPhases = (
 				67EE5C441CCA8C0F00BEE511 /* Sources */,
 				67EE5C451CCA8C0F00BEE511 /* Frameworks */,
@@ -110,9 +110,9 @@
 			);
 			dependencies = (
 			);
-			name = InteractiveStory;
+			name = Interactive;
 			productName = InteractiveStory;
-			productReference = 67EE5C481CCA8C0F00BEE511 /* InteractiveStory.app */;
+			productReference = 67EE5C481CCA8C0F00BEE511 /* Interactive.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -127,11 +127,11 @@
 				TargetAttributes = {
 					67EE5C471CCA8C0F00BEE511 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 2YCJF59P8C;
+						DevelopmentTeam = PW4Q8885U7;
 					};
 				};
 			};
-			buildConfigurationList = 67EE5C431CCA8C0F00BEE511 /* Build configuration list for PBXProject "InteractiveStory" */;
+			buildConfigurationList = 67EE5C431CCA8C0F00BEE511 /* Build configuration list for PBXProject "Interactive" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -144,7 +144,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				67EE5C471CCA8C0F00BEE511 /* InteractiveStory */,
+				67EE5C471CCA8C0F00BEE511 /* Interactive */,
 			);
 		};
 /* End PBXProject section */
@@ -288,10 +288,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = InteractiveStory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.eneff.InteractiveStory;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eneff.app.interactivestory;
+				PRODUCT_NAME = Interactive;
 			};
 			name = Debug;
 		};
@@ -299,17 +302,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = InteractiveStory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.eneff.InteractiveStory;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eneff.app.interactivestory;
+				PRODUCT_NAME = Interactive;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		67EE5C431CCA8C0F00BEE511 /* Build configuration list for PBXProject "InteractiveStory" */ = {
+		67EE5C431CCA8C0F00BEE511 /* Build configuration list for PBXProject "Interactive" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				67EE5C581CCA8C0F00BEE511 /* Debug */,
@@ -318,13 +324,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		67EE5C5A1CCA8C0F00BEE511 /* Build configuration list for PBXNativeTarget "InteractiveStory" */ = {
+		67EE5C5A1CCA8C0F00BEE511 /* Build configuration list for PBXNativeTarget "Interactive" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				67EE5C5B1CCA8C0F00BEE511 /* Debug */,
 				67EE5C5C1CCA8C0F00BEE511 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

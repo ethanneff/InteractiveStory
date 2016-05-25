@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:InteractiveStory.xcodeproj">
+      location = "self:/Users/eneff/Desktop/training/InteractiveStory/Interactive.xcodeproj">
    </FileRef>
 </Workspace>
